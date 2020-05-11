@@ -7,7 +7,7 @@
     "tsc": "tsc",
     "dev": "nodemon ./lib/server.ts"
   },
-  "author": "",
+  "author": "Gabriel Braga",
   "license": "ISC",
   "dependencies": {
     "@types/sequelize": "^4.28.8",
