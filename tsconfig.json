@@ -8,6 +8,9 @@
     "outDir": "./dist",
     "baseUrl": "./lib"
   },
-  "include": ["lib/**/*.ts"],
+  "include": [
+    "lib/**/*.ts",
+    "lib/sequelize/migrations/20200505222447-migrations.js"
+  ],
   "exclude": ["node_modules"]
 }
