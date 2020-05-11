@@ -4,23 +4,20 @@
     "password": "",
     "database": "",
     "host": "",
-    "dialect": "postgres",
-    "operatorsAliases": false
+    "dialect": "postgres"
   },
   "test": {
     "username": "",
     "password": "",
     "database": "",
     "host": "",
-    "dialect": "posgres",
-    "operatorsAliases": false
+    "dialect": "posgres"
   },
   "production": {
     "username": "",
     "password": "",
     "database": "",
     "host": "",
-    "dialect": "posgres",
-    "operatorsAliases": false
+    "dialect": "posgres"
   }
 }
