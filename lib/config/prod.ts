@@ -2,7 +2,7 @@
  *
  * lib/config/prod.js
  *
- * @description: Chaves no ambiente de PRODUÇÃO
+ * @description: Prod Environment Keys
  *
  */
 

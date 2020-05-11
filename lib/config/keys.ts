@@ -2,7 +2,7 @@
  *
  * lib/config/keys.js
  *
- * @description:  Verificando ambientes e definindo as chaves
+ * @description:  Verifying envirionment and defining keys
  *
  */
 
