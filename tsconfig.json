@@ -10,7 +10,8 @@
   },
   "include": [
     "lib/**/*.ts",
-    "lib/sequelize/migrations/20200505222447-migrations.js"
+    "lib/sequelize/migrations/20200505222447-migrations.js",
+    "lib/sequelize/seeders/20200505222447-user-example.js"
   ],
   "exclude": ["node_modules"]
 }
