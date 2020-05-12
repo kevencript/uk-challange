@@ -1,7 +1,7 @@
 /**
  * lib/routes/auth/helpers.ts
  *
- * @description: This file contains all the control of auth
+ * @description: This file contains all the helpers of users
  *
  */
 
@@ -40,8 +40,12 @@ export class AuthHelpers {
   /////////////////////
   public async validateBody(body) {
     try {
-      if (!body.password || !body.email) {
-        throw new Error("Password/email are required");
+      if (!body.password) {
+        throw new Error("Password is required");
+      }
+
+      if (!body.email) {
+        throw new Error("E-mail is required");
       }
     } catch (err) {
       console.error(err);

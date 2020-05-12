@@ -19,8 +19,10 @@ export class Auth {
 
   // Defining Routes
   public getRouter() {
-    // @route    POST /auth
-    // @desc     Realize the login and return an token
+    /////////////////////////////////////////////////////
+    // @route    POST /auth                            //
+    // @desc     Realize the login and return an token //
+    /////////////////////////////////////////////////////
     this.router.post("/", this.AuthController.login);
 
     return this.router;
