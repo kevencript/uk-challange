@@ -30,7 +30,7 @@ services:
     depends_on:
       - db
 
-  # Optional Postgres Admin
+  # Option PgAdmin4
   # pgAdmin4:
   #   container_name: pgAdmin4
   #   image: dpage/pgadmin4

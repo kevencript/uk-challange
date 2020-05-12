@@ -19,8 +19,10 @@ export class Users {
 
   // Defining Routes
   public getRouter() {
-    // @route    POST /users
-    // @desc     Register an new user
+    /////////////////////////////////////
+    // @route    POST /users           //
+    // @desc     Register an new user  //
+    /////////////////////////////////////
     this.router.post("/", this.UsersController.signup);
 
     return this.router;
