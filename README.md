@@ -3,7 +3,7 @@ This is the application documentation. For the IaC processes to occur, it is nec
 Gabriel Braga Costa
 [LinkedIn](https://learn.hashicorp.com/terraform/getting-started/install.html) | [E-mail](mailto:gabriel.bragavera@gmail.com)
 
-## 1. Moving up the infrastructure with Docker-compose
+## Moving up the infrastructure with Docker-compose
 Through Docker-compose, we will move up the entire infrastructure of our application. This basically consists of a `Postgres Database`, `NodeJs / Typescript` App and optionally `PgAdmin4`.
  
  1) Configure access to the new PostgresSql in the `docker-compose.yaml` file (`project root`)
@@ -74,3 +74,18 @@ docker-compose up --build -d
 
 When executing this command, the docker will go up our environment and we will be able to access our database as well as our API functions. See below for more information.
 
+## Default User
+Temporary user generated from the seed.
+
+| Username | Password | 
+| --- | --- |
+| user-manager | default | 
+
+> With this user it is possible to generate other users, and later, for security reasons, delete this default user.
+
+# API Documentation
+![postman-logo text-320x132](https://user-images.githubusercontent.com/4249709/29496848-63ad446c-85b1-11e7-904e-a4ddad25e9db.png)
+
+In order not to extend this documentation too much and due to the high availability of resources offered by [Postman] (https://www.postman.com), all endpoint specifications / requirements are available in the file `postman-collection.json` at the root of the project.
+
+The application would support new features in a scalable and organized way. It was a very interesting challenge.
