@@ -31,7 +31,7 @@ services:
  
 `The migrations and the population` of the database with the initial tables/data `are done automatically` by Docker (when we go up our infrastructure in the next steps), however, it is necessary to configure the connection with the database.
  
- NOTE: In our application, we are using the database in which it was made available by the docker, therefore, `it is not indicated that there is a change in the host field`.(hidden from the example below).
+ NOTE: In our application, we are using the database in which it was made available by the docker, therefore, `it is not indicated that there is a change in the host field` (hidden from the example below).
 
  ```JSON
  # lib/sequelize/config/config.json
@@ -39,7 +39,7 @@ services:
  {
   "development": {
     "username": "USERNAME used at Docker-compose",
-    "password": "SENHA used at Docker-compose",
+    "password": "PASSWORD used at Docker-compose",
     "database": "DATABASE used at Docker-compose", 
   }
   
