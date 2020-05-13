@@ -25,6 +25,12 @@ export class Items {
     /////////////////////////////////////
     this.router.get("/", this.ItemsController.returnItems);
 
+    //////////////////////////////////////
+    // @route    POST /items            //
+    // @desc     Add new Item           //
+    //////////////////////////////////////
+    this.router.post("/", this.ItemsController.addItem);
+
     return this.router;
   }
 }
