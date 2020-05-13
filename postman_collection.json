@@ -89,7 +89,13 @@
       "name": "Create User",
       "request": {
         "method": "POST",
-        "header": [],
+        "header": [
+          {
+            "key": "x-auth-token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkX3VzZXJfcHJvZmlsZSI6Mn0sImlhdCI6MTU4OTM0NTIzNSwiZXhwIjoxNTg5NzA1MjM1fQ.X1BtaLbtlUHhSAqOSXoJhN_924DFUimA56oLt2pooGA",
+            "type": "text"
+          }
+        ],
         "body": {
           "mode": "raw",
           "raw": "{\n\t\"password\":\"test\",\n\t\"email\":\"user@newtest\",\n\t\"password_confirmation\":\"test\"\n}",
@@ -113,7 +119,13 @@
           "name": "Create User",
           "originalRequest": {
             "method": "POST",
-            "header": [],
+            "header": [
+              {
+                "key": "x-auth-token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkX3VzZXJfcHJvZmlsZSI6Mn0sImlhdCI6MTU4OTM0NTIzNSwiZXhwIjoxNTg5NzA1MjM1fQ.X1BtaLbtlUHhSAqOSXoJhN_924DFUimA56oLt2pooGA",
+                "type": "text"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{\n\t\"password\":\"test\",\n\t\"email\":\"user@newtest\",\n\t\"password_confirmation\":\"test\"\n}",
@@ -169,7 +181,13 @@
       "name": "Return all Items",
       "request": {
         "method": "GET",
-        "header": [],
+        "header": [
+          {
+            "key": "x-auth-token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkX3VzZXJfcHJvZmlsZSI6Mn0sImlhdCI6MTU4OTM0NTIzNSwiZXhwIjoxNTg5NzA1MjM1fQ.X1BtaLbtlUHhSAqOSXoJhN_924DFUimA56oLt2pooGA",
+            "type": "text"
+          }
+        ],
         "url": {
           "raw": "http://localhost:3000/items?page=1&page_size=10",
           "protocol": "http",
@@ -194,7 +212,13 @@
           "name": "Return all Items",
           "originalRequest": {
             "method": "GET",
-            "header": [],
+            "header": [
+              {
+                "key": "x-auth-token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkX3VzZXJfcHJvZmlsZSI6Mn0sImlhdCI6MTU4OTM0NTIzNSwiZXhwIjoxNTg5NzA1MjM1fQ.X1BtaLbtlUHhSAqOSXoJhN_924DFUimA56oLt2pooGA",
+                "type": "text"
+              }
+            ],
             "url": {
               "raw": "http://localhost:3000/items?page=1&page_size=10",
               "protocol": "http",
@@ -251,7 +275,13 @@
       "name": "Add new Item",
       "request": {
         "method": "POST",
-        "header": [],
+        "header": [
+          {
+            "key": "x-auth-token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkX3VzZXJfcHJvZmlsZSI6Mn0sImlhdCI6MTU4OTM0NTIzNSwiZXhwIjoxNTg5NzA1MjM1fQ.X1BtaLbtlUHhSAqOSXoJhN_924DFUimA56oLt2pooGA",
+            "type": "text"
+          }
+        ],
         "body": {
           "mode": "raw",
           "raw": "{\n\t\"name\":\"Quad Item\",\n\t\"groups\":[1,2]\n}",
@@ -275,7 +305,13 @@
           "name": "Add new Item",
           "originalRequest": {
             "method": "POST",
-            "header": [],
+            "header": [
+              {
+                "key": "x-auth-token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkX3VzZXJfcHJvZmlsZSI6Mn0sImlhdCI6MTU4OTM0NTIzNSwiZXhwIjoxNTg5NzA1MjM1fQ.X1BtaLbtlUHhSAqOSXoJhN_924DFUimA56oLt2pooGA",
+                "type": "text"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{\n\t\"name\":\"New Item\",\n\t\"groups\":[1,2]\n}",
