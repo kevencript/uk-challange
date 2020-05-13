@@ -4,7 +4,7 @@ Gabriel Braga Costa
 [LinkedIn](https://learn.hashicorp.com/terraform/getting-started/install.html) | [E-mail](mailto:gabriel.bragavera@gmail.com)
 
 ## Moving up the infrastructure with Docker-compose
-Through Docker-compose, we will move up the entire infrastructure of our application. This basically consists of a `Postgres Database`, `NodeJs / Typescript` App and optionally `PgAdmin4`.
+Through Docker-compose, we will move up the entire infrastructure of our application. This basically consists of a `Postgres Database`, `NodeJs / Typescript app` add optionally `PgAdmin4`.
  
  1) Configure access to the new PostgresSql in the `docker-compose.yaml` file (`project root`)
  ```HCL
