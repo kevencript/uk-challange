@@ -29,7 +29,7 @@ services:
  
  2) Configure Sequelize to perform the migrations / seeders (`lib/sequelize/config/config.json`):
  
-The migrations and the population of the database with the initial data are done automatically by Docker (when we go up our infrastructure in the next steps), however, it is necessary to configure the connection with the database.
+`The migrations and the population` of the database with the initial tables/data `are done automatically` by Docker (when we go up our infrastructure in the next steps), however, it is necessary to configure the connection with the database.
  
  NOTE: In our application, we are using the database in which it was made available by the docker, therefore, `it is not indicated that there is a change in the host field`.(hidden from the example below).
 
