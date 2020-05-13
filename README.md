@@ -1,4 +1,4 @@
-This is the application documentation. For the IaC processes to occur, it is necessary to have the installation of [Docker]t(https://docs.docker.com/docker-for-windows/install/)
+This is the application documentation. For the IaC processes to occur, it is necessary to have the installation of [Docker](https://docs.docker.com/docker-for-windows/install/)
 
 Gabriel Braga Costa
 [LinkedIn](https://learn.hashicorp.com/terraform/getting-started/install.html) | [E-mail](mailto:gabriel.bragavera@gmail.com)
