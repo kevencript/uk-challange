@@ -7,6 +7,7 @@
 
 import * as express from "express";
 import { UsersController } from "./UsersController";
+import authMiddleware from "../../middlewares/auth";
 
 export class Users {
   constructor() {
@@ -17,11 +18,13 @@ export class Users {
   public router: express.Router;
   public UsersController: UsersController = new UsersController();
 
-  // Defining Rou
+  // Defining Routes
   public getRouter() {
-    // @route    POST /users/signup
-    // @desc     Register an new user
-    this.router.get("/", this.UsersController.signup);
+    /////////////////////////////////////
+    // @route    POST /users           //
+    // @desc     Register an new user  //
+    /////////////////////////////////////
+    this.router.post("/", authMiddleware, this.UsersController.signup);
 
     return this.router;
   }
