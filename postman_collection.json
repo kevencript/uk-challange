@@ -1,0 +1,332 @@
+{
+  "info": {
+    "_postman_id": "531a339d-359b-4490-aab0-32aef71f0cf7",
+    "name": "UK Challange",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n   \"email\":\"user@test\",\n   \"password\":\"test\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/auth",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["auth"]
+        },
+        "description": "To perform the Login, it is necessary to indicate an `email` and a` password`.\n\nRealize login and return and Authorization Token"
+      },
+      "response": [
+        {
+          "name": "Login",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n   \"email\":\"user@example\",\n   \"password\":\"default\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/auth",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["auth"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "189"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"bd-KhxqUn98RAEq9qO0TRvfxlSAIQ8\""
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 12 May 2020 00:26:49 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"authorizedToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkX3VzZXJfcHJvZmlsZSI6MX0sImlhdCI6MTU4OTI0MzIwOSwiZXhwIjoxNTg5NjAzMjA5fQ.t2VsMDNVHj93Zm1YWiKIBqznCs4nWula56sQ3INdPhY\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Create User",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"password\":\"test\",\n\t\"email\":\"user@newtest\",\n\t\"password_confirmation\":\"test\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/users",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["users"]
+        },
+        "description": "To create a new user, it is necessary to indicate the `password`,` password_confirmation` and an `email`.\n\nThis will create a new user, but will not return an access Token."
+      },
+      "response": [
+        {
+          "name": "Create User",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"password\":\"test\",\n\t\"email\":\"user@newtest\",\n\t\"password_confirmation\":\"test\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/users",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["users"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "73"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"49-Zi4Rc9AvR6Uk02WsHq56MfTlw+c\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 13 May 2020 03:29:20 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"successMessage\": \"User successfully created with e-mail 'user@newtest'\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Return all Items",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/items?page=1&page_size=10",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["items"],
+          "query": [
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "page_size",
+              "value": "10"
+            }
+          ]
+        },
+        "description": "To return all items in an organized way, it is possible to pass two parameters (`page` and` page_size`) to paginate the answer as necessary."
+      },
+      "response": [
+        {
+          "name": "Return all Items",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/items?page=1&page_size=10",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["items"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "page_size",
+                  "value": "10"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "231"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"e7-bhPUjIwdxaIOYze5PXNrVNCKw8w\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 13 May 2020 03:28:14 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"docs\": [\n        {\n            \"id_item\": 1,\n            \"name\": \"Main Item\"\n        },\n        {\n            \"id_item\": 2,\n            \"name\": \"Second Item\"\n        },\n        {\n            \"id_item\": 3,\n            \"name\": \"Second Item\"\n        },\n        {\n            \"id_item\": 4,\n            \"name\": \"Third Item\"\n        },\n        {\n            \"id_item\": 5,\n            \"name\": \"Quad Item\"\n        }\n    ],\n    \"total_pages\": 1,\n    \"total_items\": 5,\n    \"current_page\": 1\n}"
+        }
+      ]
+    },
+    {
+      "name": "Add new Item",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"name\":\"Quad Item\",\n\t\"groups\":[1,2]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/items",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["items"]
+        },
+        "description": "To add a new item, it is necessary to indicate a `name` and an` array` containing the IDs of the groups in which it is part."
+      },
+      "response": [
+        {
+          "name": "Add new Item",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"name\":\"New Item\",\n\t\"groups\":[1,2]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/items",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["items"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "34"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"22-xZlvmPM652Ah2rXZAiB84bIhCIM\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 13 May 2020 03:27:56 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"successMessage\": \"Item created!\"\n}"
+        }
+      ]
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
