@@ -7,6 +7,7 @@
 
 import * as express from "express";
 import { ItemsController } from "./ItemsController";
+import authMiddleware from "../../middlewares/auth";
 
 export class Items {
   constructor() {
@@ -23,13 +24,13 @@ export class Items {
     // @route    GET /items            //
     // @desc     Return all items      //
     /////////////////////////////////////
-    this.router.get("/", this.ItemsController.returnItems);
+    this.router.get("/", authMiddleware, this.ItemsController.returnItems);
 
     //////////////////////////////////////
     // @route    POST /items            //
     // @desc     Add new Item           //
     //////////////////////////////////////
-    this.router.post("/", this.ItemsController.addItem);
+    this.router.post("/", authMiddleware, this.ItemsController.addItem);
 
     return this.router;
   }

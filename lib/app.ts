@@ -1,3 +1,10 @@
+/**
+ * lib/app.ts
+ *
+ * @description: App Server config
+ *
+ */
+
 import * as express from "express";
 import * as bodyParser from "body-parser";
 import { Router } from "./routes/Router";

@@ -7,6 +7,7 @@
 
 import * as express from "express";
 import { UsersController } from "./UsersController";
+import authMiddleware from "../../middlewares/auth";
 
 export class Users {
   constructor() {
@@ -23,7 +24,7 @@ export class Users {
     // @route    POST /users           //
     // @desc     Register an new user  //
     /////////////////////////////////////
-    this.router.post("/", this.UsersController.signup);
+    this.router.post("/", authMiddleware, this.UsersController.signup);
 
     return this.router;
   }
